@@ -16,7 +16,7 @@
     )
     group.save!
   end   
-    1.times do # assign spme users to groups/admin roles in group_users table
+    1.times do # assign some users to groups/admin roles in group_users table
         group_users = GroupUser.create(
             role: User.all().sample.admin? ? 1 : 0,
             user_id: User.all().sample.id,
@@ -25,5 +25,7 @@
         group_users.save!
     end
 end 
+
+# Seeding is not a perfect representation of DB, just gives some usable data to work with
 
 

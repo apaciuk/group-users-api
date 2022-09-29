@@ -1,5 +1,6 @@
 # group-users-api
 
+Ruby 2.7.0
 # Auth
 Is on User only, so subsequent models can be used with 'before_action :authenticate_user!' in its controller. Uses JWT, JTI in users table for current token
 
